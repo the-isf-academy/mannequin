@@ -1,3 +1,9 @@
+# Body Parts
+# By Chris Proctor
+# --------------------------------------
+# This module draws body parts. There are a bunch of constants defining the size and
+# shape of body parts, and then functions that do the drawing. 
+
 from turtle import right, left, back, fillcolor
 from helpers import fly, restore_state_when_finished, update_position
 from shapes import rectangle, rectangle_from_center, rectangle_from_side_edge

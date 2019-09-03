@@ -87,6 +87,14 @@ def make_generator(setting):
     else:
         return cycle([setting])
 
+# -----------------------------------------------------------------------------
+# ! ADVANCED !
+# -----------------------------------------------------------------------------
+# The code below uses some cool ideas that are far ahead of what we've studied
+# in class. If you're interested, feel free to read it--and ask a teacher if
+# you get stuck!
+# -----------------------------------------------------------------------------
+
 def interpolate(start, stop, num_steps):
     """
     Returns a range from `start` to `stop`, divided into `num_steps` steps. 

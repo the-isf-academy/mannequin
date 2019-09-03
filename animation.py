@@ -30,9 +30,12 @@ def animate(drawing_function, settings, delay=0.02):
             drawing_function(frame_settings)
         sleep(delay)
 
-# Prepares settings for an animation. The helpers `interpolate` and mirror` 
-# are used to create the 
-#
+# Prepares settings for an animation. The helpers `interpolate` and `mirror`` 
+# are used to create ranges of values for different settings. Basically, we want
+# a range that slides from the first value to the last value and back, so that
+# we can create a smooth loop of action. For example, the head should tilt
+# forward and then back again. Try messing around with the values to create 
+# different actions!
 
 if __name__ == '__main__':
     settings = default_settings()
