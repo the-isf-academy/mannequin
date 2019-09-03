@@ -9,9 +9,9 @@
 # on't expect understand everything that's happening here. Instead, try playing
 # around with the settings at the bottom to see what happens. 
 
-from turtle import clear
+from turtle import clear, hideturtle
 from helpers import no_delay, generate_animation_settings, mirror, interpolate
-from project import default_settings
+from main import default_settings
 from body_parts import draw_body
 from time import sleep
 
@@ -45,4 +45,5 @@ if __name__ == '__main__':
     settings['back_leg_knee_angle'] = mirror(interpolate(0, 30, 10))
     settings['front_leg_hip_angle'] = mirror(interpolate(30, -30, 10))
     settings['front_leg_knee_angle'] = mirror(interpolate(30, 0, 10))
+    hideturtle()
     animate(draw_body, settings)
