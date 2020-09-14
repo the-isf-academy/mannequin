@@ -1,18 +1,18 @@
 # Helpers
 # By Chris Proctor
 # ----------------
-# A mishmash of useful functions. Feel free to use these in your own projects if they are helpful to you. 
+# A mishmash of useful functions. Feel free to use these in your own projects if they are helpful to you.
 
 from turtle import (
-    forward, 
-    penup, 
-    pendown, 
-    position, 
-    heading, 
-    setposition, 
+    forward,
+    penup,
+    pendown,
+    position,
+    heading,
+    setposition,
     setheading,
-    tracer, 
-    delay, 
+    tracer,
+    delay,
     update,
     goto
 )
@@ -26,7 +26,7 @@ def fly(distance):
 
 def update_position(x, y=None):
     """
-    Updates the turtle's position, adding x to the turtle's current x and y to the 
+    Updates the turtle's position, adding x to the turtle's current x and y to the
     turtle's current y. This may be called in two different ways:
 
         update_position(10, 20)
@@ -47,7 +47,7 @@ class restore_state_when_finished:
 
         from turtle import forward, right
         from helpers import restore_state_when_finished
-    
+
         for angle in range(0, 360, 15):
             with restore_state_when_finished():
                 right(angle)
@@ -97,7 +97,7 @@ def make_generator(setting):
 
 def interpolate(start, stop, num_steps):
     """
-    Returns a range from `start` to `stop`, divided into `num_steps` steps. 
+    Returns a range from `start` to `stop`, divided into `num_steps` steps.
     For example:
 
         >>> interpolate(10, 20, 4)

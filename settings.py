@@ -1,0 +1,11 @@
+
+
+
+'leg_hip_angle': -30,
+'CAT_WIDTH': 200,
+'CAT_HEIGHT': 100,
+'TAIL_WIDTH': 20,
+'TAIL_LENGTH':70,
+'STAR_WIDTH':200,
+'STAR_LENGTH':170,
+'CIRCLE_RAD':50
